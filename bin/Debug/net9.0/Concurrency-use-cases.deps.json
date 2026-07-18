@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "Concurrency-use-cases/1.0.0": {
+        "runtime": {
+          "Concurrency-use-cases.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Concurrency-use-cases/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
