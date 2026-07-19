@@ -7,7 +7,9 @@
             while (true)
             {
                 double result;
-                double current = bankAccount._balance;
+                // Here we made the value of balance account in variable to store it in CPU register for fast read also 
+                // if the value of balance change doesnt trigered data incoherence
+                double current = bankAccount.Balance;
                 if (current < amount || current == 0 || amount <= 0)
                 {
                     throw new ArgumentException("Please select amount that are less than balance account and positive");
@@ -17,12 +19,9 @@
                     result = current - amount;
                 }
 
-                if (Interlocked.CompareExchange(ref bankAccount.BalanceRef, result, current) != current)
+                if (Interlocked.CompareExchange(ref bankAccount.BalanceRef, result, current) == current)
                 {
-                    
-                } else
-                {
-                    return true;
+                    return true;   
                 }
             }
         }

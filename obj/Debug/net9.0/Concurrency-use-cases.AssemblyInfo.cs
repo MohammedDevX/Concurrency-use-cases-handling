@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Concurrency-use-cases")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4c173e89e585c47a1a740fafc7986e7c1bee9276")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+55abed0e72db36386e4e0c6e5e365ff0189d222a")]
 [assembly: System.Reflection.AssemblyProductAttribute("Concurrency-use-cases")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Concurrency-use-cases")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
