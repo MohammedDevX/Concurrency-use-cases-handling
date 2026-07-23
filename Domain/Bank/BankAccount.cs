@@ -7,6 +7,7 @@
         public double Balance
         {
             get => _balance;
+            set => _balance = value;
         }
 
         /* 

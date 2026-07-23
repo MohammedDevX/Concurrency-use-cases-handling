@@ -1,12 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Concurrency_use_cases.Domain.StripePaiement
+﻿namespace Concurrency_use_cases.Domain.StripePaiement
 {
-    internal class Order
+    public class Order
     {
+        public int Id { get; }
+        public decimal Amount { get; }
+
+        public Order(int id, decimal amount)
+        {
+            if (amount <= 0)
+                throw new ArgumentException("Amount must be greater than zero.");
+
+            Id = id;
+            Amount = amount;
+        }
     }
 }
